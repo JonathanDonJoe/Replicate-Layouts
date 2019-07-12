@@ -6,11 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sprint Report Layout Replica</title>
     <style>
-    
+    html{
+        box-sizing: border-box;
+    }
+    *,*::before *::after{
+        box-sizing: inherit; 
+    }
+    body{
+        display:flex;
+        width:100vw;
+        margin:0;
+        background-color: lightblue;
+        flex-direction: column;
+    }        
+    #top{
+        display:flex;
+        /* border:black 1px solid; */
+        background-color: gray;
+        height:100px;
+        width:100vw;
+    }
+    #top-left{
+        width:80vw;
+        /* border:green 1px solid; */
+        border-radius: 0 20px 0 0;
+        background-color: lightgray;
+    }
+    #top-right{
+        width:20vw;
+    }
+    #middle{
+        height:600px;
+        /* border:black 1px solid; */
+        display:flex;
+    }
+    #middle-left{
+        display:flex;
+        height:600px;
+        width:10vw;
+        background-color: lightgray;
+        
+    }
+    #middle-1{
+        height:600px;
+        width:5vw;
+        /* border:black 1px solid; */
+        background-color: lightgray;
+    }
+    #middle-2{
+        height:600px;
+        width:5vw;
+        /* border:black 1px solid; */
+        background-color: white;
+        border-radius: 20px 0 0 20px;
+    }
+    #middle-center{
+        height:600px;
+        width:70vw;
+        /* border:black 1px solid; */
+        background-color: rgb(201, 201, 201);
+    }
+    #middle-right{
+        display:flex;
+        height:600px;
+        width:20vw;
+        background-color: gray;        
+    }
+    #middle-3{
+        height:600px;
+        width:15vw;
+        /* border:black 1px solid; */
+        background-color: white;
+        border-radius: 0 20px 20px 0;        
+    }
+    /* #middle-4{
+        height:600px;
+        width:5vw;
+        background-color: gray;
+    }     */
+    #bottom{
+        display:flex;
+        /* border:black 1px solid; */
+        background-color: lightgray;
+        height:100px;
+        width:100vw;
+    }
+    #bottom-left{
+        width:20vw;
+        background-color: lightgray;
+    } 
+    #bottom-right{
+        width:80vw;
+        border-radius: 0 0 0 20px;
+        background-color: gray;
+    }   
     </style>
 </head>
 <body>
-    
+    <section id="top">
+        <div id="top-left"></div>
+        <div id="top-right"></div>
+    </section>
+    <section id="middle">
+        <div id="middle-left">
+            <div id="middle-1"></div>
+            <div id="middle-2"></div>
+        </div>
+        <div id="middle-center"></div>
+        <div id="middle-right">
+            <div id="middle-3"></div>
+            <div id="middle-4"></div>
+            
+                    </div>
+    </section>
+    <section id="bottom">
+        <div id="bottom-left"></div> 
+        <div id="bottom-right"></div>
+    </section>
 
 
 </body>
